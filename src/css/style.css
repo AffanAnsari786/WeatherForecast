@@ -247,13 +247,13 @@ body{
   width: 300px;
   margin-top: 0px;
   margin-bottom: 40px;
-  margin-left: 80px;
+  margin-left: 0px;
   border-radius: 0px 12px 12px 0px;
 }
 .card {
   
-  height: 250px;
-  width: 450px;
+  height: 200px;
+  width: 400px;
  }
 
 }
