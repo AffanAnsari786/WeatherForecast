@@ -39,6 +39,8 @@ body{
     background: url('../images/logo.png') no-repeat;
     background-size: cover;
     background-position: center;
+    animation: zoomin 3s ease forwards, floatLogo 4s ease-in-out infinite ;
+    animation-delay: 0s,2s;
 }
 .header .navigation a{
     position: relative;
@@ -50,6 +52,7 @@ body{
     color: white;
     transition: .5s;
 }
+
 .header .navigation a:hover{
      color: #F73D93;
 }
@@ -86,6 +89,8 @@ body{
     display: flex;
     justify-content: center;
     background: lightgray;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: 1s;
 }
 .search input{
     width: 80%;
@@ -97,6 +102,8 @@ body{
     border-radius: 20px;
     color: #0288D1;
     background: lightgray;
+    animation: slideLeft 1s ease-in-out forwards;
+    animation-delay: 1s;
 
 }
 .searchbutton{
@@ -112,6 +119,8 @@ body{
     border-radius: 0px 10px 10px 0px;
     font-size: 18px;
     font-weight: 500;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 } 
 .searchbutton:hover {
     background-color: #17b8ce;
@@ -128,6 +137,8 @@ body{
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
       0 17px 17px 0 rgba(0, 0, 0, 0.15);
       backdrop-filter: blur(5px);
+    animation: slideBottom 2s ease-in-out forwards;
+    animation-delay: 1s;
   }
 
   .card .weathermood {
@@ -229,31 +240,149 @@ body{
     font-size: 15px;
   }
 
-  @media only screen and (max-width: 600px) {
-    .header{
+@media only screen and (max-width: 600px) {
+.header{
       padding: 0px 30px; 
   }
-  .header h1{
+.header h1{
     width: 15%;
     height: 30%;
-    background-size: cover;
 }
-  .header .navigation a{
-    margin-right: 20px;
+.header .navigation a{
+    margin-right: 15px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
 }
 .wrap {
-  width: 300px;
+  width: 250px;
   margin-top: 0px;
   margin-bottom: 40px;
-  margin-left: 0px;
-  border-radius: 0px 12px 12px 0px;
+  margin-left: 10px;
+}
+.search{
+  width: 100%;
+}
+.search input{
+  width: 50%;
+  font-size: 15px;
+  padding: 18px;
+}
+.searchbutton{
+  height: 35px;
+  font-size: 15px;
 }
 .card {
   
-  height: 200px;
-  width: 400px;
+  height: 150px;
+  width: 300px;
  }
+ .card .weathermood {
+  font-size: 40px;
+}
+ .card .weatherinfo {
+  padding-left: 5px;
+  
+}
+.card .weatherinfo .temperature {
+  font-size: 35px;
+  
+}
+.card .weatherinfo .description .weathercondition {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 100;
+}
+.card .weatherinfo .description .place {
+  font-size: 15px;
+}
+.card .date {
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+.card .extra-temp .extra-info-leftside {
+  font-weight: 400;
+  font-size: 10px;
+}
 
+.card .extra-temp p {
+  font-size: 25px;
+  font-weight: 600;
+}
+ @keyframes float {
+  0%{
+    transform: translateY(0);
+    
+  }
+  50%{
+    transform: translateY(15px);
+    
+  }
+  100%{
+    transform: translateY(0);
+    
+  }
+  
+}
+
+/* All Css Animation KeyFrames */
+}
+@keyframes slideRight {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+}
+@keyframes slideLeft {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+}
+@keyframes slideBottom {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+}
+@keyframes zoomin {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+@keyframes floatLogo {
+  0%{
+    transform: translateX(0);
+    
+  }
+  50%{
+    transform: translateX(50px);
+    
+  }
+  100%{
+    transform: translateX(0);
+    
+  }
+  
 }

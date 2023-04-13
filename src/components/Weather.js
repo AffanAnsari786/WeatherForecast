@@ -40,8 +40,8 @@ function Weather() {
         <nav className='navigation'>
             <a href='#'>Home</a>
             <a href='#'>Career</a>
-            <a href='#'>About</a>
-            <a href='#'>Contact us</a>
+            <a href='#' >About</a>
+            <a href='#' >Contact us</a>
         </nav>
     </header>
 
