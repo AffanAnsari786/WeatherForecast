@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- <header class="header">
+        <nav class="navbar">
+            <img src="./images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header class="header">
+        <nav class="navbar">
+            <img src="./images/logo.png" alt="Logo">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact-Us</a></li>
+            </ul>
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <section id="home" class="home">
+        
+        <div class="home-content">
+            <h1>Hi, I am <span style="color: #38E54D;"> Ansari Affan</span></h1>
+            <h3>Web Developer</h3>
+            <blockquote><h4>“I’m not a great programmer; I’m just a good programmer with great habits.” </h4></blockquote>
+            <p>My name is Affan and my portfolio is a reprensentation of all that I've learned and accomplished as a Science and Engineering Student. The portfolio show how my critical thinking skills have evovled over the course of the program.</p>
+            <!-- <span id="opac"></span> -->
+        </div>
+        <img src="./images/photo.png" id="home-img">
+    </section>
+
+    <section id="about" class="about">
+        <img src="./images/photo.png">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <h3 style="color: rgba(255, 1, 187, 0.9);">Frontend Developer</h2>
+            <p>I'm very dedicated and passionate person, I've designed many website and during these journey I've learned so much things. I love designing website and looking for an opportunity to work as a developer...</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1 class="heading">Skills & Experience</h1>
+
+        <div class="container">
+
+            <div class="container-box">
+                <h2>Frontend</h2>
+                <div>
+                    <i class='bx bxl-html5 circle'></i>
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <i class='bx bxl-css3 circle'></i>
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <i class='bx bxl-javascript circle' ></i>
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+
+            <div class="container-box">
+                <h2>Backend</h2>
+                <div>
+                    <i class='bx bxl-python circle' ></i>
+                    <p>PYTHON</p>
+                </div>
+                <div>
+                    <i class='bx bxl-flask circle' ></i>
+                    <p>FLASK</p>
+                </div>
+                <div>
+                    <i class='bx bxl-java circle' ></i>
+                    <p>JAVA</p>
+                </div>
+            </div>
+
+            <div class="container-box">
+                <h2>Database</h2>
+                <div>
+                    <i class='bx bxl-postgresql circle' ></i>
+                    <p>MYSQL</p>
+                </div>
+                <div>
+                    <i class='bx bxl-mongodb circle' ></i>
+                    <p>MONGODB</p>
+                </div>
+                <div>
+                    <i class='bx bxl-java circle' ></i>
+                    <p>ORACLE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <h1 class="heading">Projects</h1>
+        <div class="container">
+            <div class="container-proj">
+                <img src="./images/blog.jpg">
+                <p>Blog Website(MERN)</p>
+            </div>
+            <div class="container-proj">
+                <img src="./images/quiz.jpg">
+                <p>Quiz App</p>
+            </div>
+            <div class="container-proj">
+                <img src="./images/todoImage.jpg">
+                <p>ToDo List App</p>
+            </div>
+            <div class="container-proj">
+                <img src="./images/weather.jpg">
+                <p>Weather Forecast App</p>
+            </div>
+            <div class="container-proj hide-proj">
+                <img src="./images/registartion.jpg">
+                <p>Registration Form App</p>
+            </div>
+            <div class="container-proj hide-proj">
+                <img src="./images/food.jpg">
+                <p>Food Restauring App</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h1 class="heading">Services</h1>
+
+        <div class="service-container">
+            <div class="service-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Developement</h3>
+                <p>Web development services help create all types of web-based software and ensure great experience for web users.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxl-aws'></i>
+                <h3>AWS Cloud Service</h3>
+                <p>AWS Academy provides higher education institutions with a free, ready-to-teach cloud computing curriculum.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxl-android'></i>
+                <h3>Android Development</h3>
+                <p>Android software development is the process by which applications are created for devices running the Android operating system.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact Me!</h1>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by AffanAnsari | All Right Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
