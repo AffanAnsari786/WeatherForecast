@@ -507,6 +507,7 @@ input{
         width: 20%;
         height: 15%;
     }
+    
     .home {
         height: 650px;
         display: flex;
@@ -549,11 +550,11 @@ input{
 }
 @media screen and (max-width: 600px) {
     
-.menu-icon .bar {
+/* .menu-icon .bar {
     width: 25px;
     height: 3px;
     margin: 5px 0;
-}
+} */
     
     .home {
         height: 550px;
@@ -570,7 +571,7 @@ input{
         height: 200px;
     }
     h1{
-        font-size: 35px;
+        font-size: 32px;
     }
     h2{
         font-size: 25px;
@@ -609,7 +610,7 @@ input{
         height: 180px;
     }
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     h2{
         font-size: 22px;
